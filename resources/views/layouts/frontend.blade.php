@@ -23,7 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
-      <a href="{{ asset('AdminLTE') }}/index3.html" class="navbar-brand">
+      <a href="/" class="navbar-brand">
         <img src="images/logo.png" alt="AdminLTE Logo" class="brand-image " style="opacity: .8">
         <span class="brand-text font-weight-light"><b>Monitoring Data Mangrove</b></span>
       </a>
@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="col-sm-6">
             <h1 class="m-0">Selamat Datang<small></small></h1>
           </div><!-- /.col -->
-          
+
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -72,7 +72,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </div>
   <!-- /.content-wrapper -->
 
-  
+
 
   <!-- Main Footer -->
   <footer class="main-footer">

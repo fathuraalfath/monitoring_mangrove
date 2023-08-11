@@ -24,6 +24,11 @@ class MangroveModel extends Model
         return null;
     }
 
+    // public function downloadFile($id)
+    // {
+    //     # code...
+    // }
+
     public function detailData($id)
     {
         return DB::table('tbl_mangrove')->where('id', $id)->first();

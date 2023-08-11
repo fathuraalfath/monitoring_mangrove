@@ -82,29 +82,6 @@
                             </div>
                         </div>
                         {{--  --}}
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label> Latitude </label>
-                                <input name="latitude" class="form-control">
-                                <div class="text-danger">
-                                    @error('latitude')
-                                        {{ $message }}
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
-                        {{--  --}}
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label> Longitude </label>
-                                <input name="longitude" class="form-control">
-                                <div class="text-danger">
-                                    @error('longitude')
-                                        {{ $message }}
-                                    @enderror
-                                </div>
-                            </div>
-                        </div>
                         {{--  --}}
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -123,7 +100,20 @@
                                 <label> Foto Dokumentasi </label>
                                 <input type="file" name="foto" class="form-control">
                                 <div class="text-danger">
-                                    @error('filename')
+                                    @error('foto')
+                                        {{ $message }}
+                                    @enderror
+                                </div>
+                            </div>
+                        </div>
+                        {{--  --}}
+                        {{--  --}}
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label> Folder SHP </label>
+                                <input type="file" name="rar" class="form-control">
+                                <div class="text-danger">
+                                    @error('rar')
                                         {{ $message }}
                                     @enderror
                                 </div>

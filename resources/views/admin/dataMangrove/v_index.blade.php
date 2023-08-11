@@ -59,10 +59,9 @@
                                 <th>Desa</th>
                                 <th>Luas (Ha)</th>
                                 <th>Kondisi</th>
-                                <th>Latitude</th>
-                                <th>Longitude</th>
                                 <th>Ket.</th>
                                 <th>Dokumentasi</th>
+                                <th>File SHP</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -77,21 +76,11 @@
                                 <td>{{ $data->desa }}</td>
                                 <td>{{ $data->luas }}</td>
                                 <td>{{ $data->kondisi }}</td>
-                                <td>{{ $data->latitude }}</td>
-                                <td>{{ $data->longitude }}</td>
                                 <td>{{ $data->ket }}</td>
+                                <td><img src="{{ url('dokumentasi/'.$data->filename) }}" width="200px" height="100px"></td>
                                 <td>
-                                    {{-- <button class="btn btn-sm btn-success" id="showImageBtn"><div class="fas fa-eye" style=""></div></button></td>
-                                    <div id="imageContainer">
-                                        @php
-                                            $path = public_path('dokumentasi/' . $data->filename);
-                                            $type = pathinfo($path, PATHINFO_EXTENSION);
-                                            $data = file_get_contents($path);
-                                            $base64 = 'data:image/' . $type . ';base64,' . base64_encode($data);
-                                        @endphp
-                                            <img src="{{ $base64 }}" style="width: 150px" alt="Image From Database">
-                                    </div> --}}
-                                <img src="{{ url('dokumentasi/'.$data->filename) }}" width="100px"></td>
+                                    <a href="/admin/download/{{ urlencode($data->file_shp) }}" class="btn btn-sm btn-primary fa fa-file"> Unduh</a>
+                                </td>
                                 <td>
                                     <a href="/admin/edit/{{ $data->id }}" class="btn btn-sm btn-warning"> Edit </a> &nbsp;
                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete{{ $data->id }}">Delete</button>
